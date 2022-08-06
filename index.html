@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Course Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
+    <style>
+      #head{
+        text-align: center;
+      }
+    </style>
+  </head>
 <body>
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
@@ -53,12 +58,13 @@
             <input type="text" class="form-control" placeholder="Chapter Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <button id="add_btn" class="btn btn-outline-success" type="button">Add</button>
           </div>
-          <ul id="list" class="list-group">
-            <li class="list-group-item d-flex justify-content-between">
+          <ul id="list" class="list-group" >
+            <h3 id="head" class="empty-msg" >No Chapters present. Please add some !!</h3>
+              <!-- <li class="list-group-item d-flex justify-content-between">
                 <h3 class="flex-grow-1">Chapter 1</h3>
                 <button id="edit_btn" class="btn btn-warning mx-1" onclick="editChapter(this)">Edit</button>
                 <button id="remove_btn" class="btn btn-danger" onclick="removeChapter(this)">Remove</button>
-            </li>
+            </li> -->
           </ul>
         </div>
     </main>
